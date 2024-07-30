@@ -1,0 +1,355 @@
+.container-two{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: -4px;
+}
+.first-side{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 750px;
+    background-image:url('/Imagens/fundoarea2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+.second-side{
+    display: flex;
+    width: 50%;
+    height: 750px;
+    background-color:#ffe2f8;
+    border-top: 0;
+}
+.text{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:  medium;
+    color: rgb(236, 83, 139);
+    text-indent: 1.5em;
+    text-align: justify;
+    
+}
+.text p {
+    font-size: 22px;
+}
+.h1{
+    text-align: center;
+    font-size: 30px;
+}
+.container-align{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.icon-folha{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.btn-gallery{
+    width: 25%;
+    height: auto;
+}
+
+.btn-gallery span{
+    font-size: 20px;
+}
+.title-and-image{
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+}
+.title-and-image :first-child{
+    margin-right: 4px;
+}
+.title-and-image img{
+    width: 60px;
+    height: 60px;
+    margin-top: 1%;
+    margin-left: 10px;
+}
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:justify;
+    font-weight: 350;
+    text-indent: 1.5em;
+}
+.img-seta img{
+    width: 10vw;
+    float: left;
+}
+.img-seta {
+    width: 4vw;
+    position: relative;
+    left: 10vw;
+}
+.container-carousel{
+    width: 100%;
+    height: fit-content;
+    background-color: #ffe2f8;
+    border-top: rgb(236, 83, 139) 1vw solid;
+}
+.title-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-carousel h1{
+   font-size: 6vw;
+   letter-spacing: 4px;
+   color:rgb(236, 83, 139);
+   font-family: 'SundayMoment';
+}
+
+.card-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 70%;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 20vw;
+}
+.card-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.card-container p{
+    position: absolute;
+    color:white;
+    font-family: 'SundayMoment';
+    font-size: 3vw;
+    text-shadow: 1px 2px 2px black;
+}
+.card-container:hover{
+    transition: 1.6 ease-in-out;
+    border: 4px solid rgb(216, 82, 160);
+    color: blueviolet;
+}
+/*/responsividade */
+@media(min-width:1401px) and (max-width:1525px){
+    .img-seta {
+        left: 9vw;
+    }
+    .intro{
+        font-size: 2vw;
+    }
+}
+@media(min-width:1321px) and (max-width:1401px){
+    .img-seta{
+        left:8vw;
+    }
+}
+@media(min-width:1189px) and (max-width:1321px){
+    .img-seta{
+        left:7vw;
+    }
+}
+@media(min-width: 1071px) and (max-width:1189px){
+    .img-seta{
+        left:5vw;
+    }
+}
+@media(min-width:978px) and (max-width:1071px){
+    .img-seta{
+        left:4vw;
+    }
+}
+@media(min-width:731px) and (max-width:978px){
+    .img-seta{
+        left:3vw;
+    }
+}
+.container-seta{
+    display: flex;
+    flex-direction: column;
+    margin-left: -8%;
+    margin-top: 20%;
+}
+.intro{
+    font-size: 3vw;
+    padding-left: 2%;
+    text-wrap: nowrap;
+
+
+}
+.title{
+    width: fit-content;
+    padding-left:20px;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+@media(min-width:1500px){
+    .title{
+        margin-left:95px;
+    }
+    .container-seta{
+        margin-top: 10%;
+    }
+}
+.intro{
+    font-size:65%;
+}
+
+
+
+@media (max-width: 700px){
+    
+    .container-two{
+        flex-direction: column;
+    }
+    .container-align{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .second-side{
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    .text{
+        width: 90%;
+        text-indent: 0;
+    }
+    .text p{
+        font-size: 15px;
+        text-indent: 1.5rem;
+        padding: 10px;
+        white-space: none;
+        
+    }
+    .btn-gallery{
+        width: fit-content;
+    }
+    .btn-gallery span{
+        font-size: small;
+    }
+    .first-side{
+        width: 100%;
+        height: fit-content;
+    }
+    .video-reso{
+        height: 90vw;
+    }
+    @media(min-width:384px){
+    .video-reso{
+        float: none;
+    }
+   
+    }
+    .container-seta{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-seta img{
+        width: 10vw;
+        float: left;
+    }
+    .img-seta {
+        width: 10vw;
+        position: relative;
+        left: 60px;
+    }
+    .title{
+        width: fit-content;
+        padding-left:20px;
+        color: white;
+        text-shadow: 1px 2px 2px black;
+        font-size: smaller;
+    }
+    @media(min-width:390px) and (max-width:600px){
+        .img-seta {
+            left: 75px;
+        }
+    }
+    
+}
+@media(min-width:700px) and (max-width:990px){
+    .container-two{
+        flex-direction: row;
+    }
+    .container-align{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+    }
+    .text{
+        text-indent: 0;
+        width: 90%;
+    }
+    .text p{
+        font-size: 18px;
+        text-indent: 1.5rem;
+        padding: 10px;
+        white-space: none;
+    }
+    .btn-gallery{
+        width: fit-content;
+    }
+    .video-reso{
+        height: 40vh;
+    }
+    .container-seta{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-seta img{
+        width: 10vw;
+        float: left;
+    }
+    .img-seta {
+        width: 5vw;
+        position: relative;
+        left:9vw;
+        margin-bottom: -20px;
+    }
+    .intro{
+        font-size: 2vw;
+        margin-left: 3vw;
+    }
+    @media(min-width:900px) and (max-width:990px){
+        .img-seta{
+            left:13vw;
+        }
+    }
+    .title{
+        width: fit-content;
+        padding-left:20px;
+        color: white;
+        text-shadow: 1px 2px 2px black;
+        font-size: smaller;
+    }
+}
+/*/responsividade latest works/*/
+@media(max-width:700px){
+    .card-row{
+        flex-direction: column;
+    }
+    .card-container{
+        padding-top: 5%;
+        width: 50%;
+        height: 50%;
+    }
+    .card-container p{
+        font-size: 9vw;
+    }
+
+}
