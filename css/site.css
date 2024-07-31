@@ -205,6 +205,10 @@ body{
     display: none;
     
 }
+.background-pink{
+    max-height: 20vh;
+    max-width: 100%;
+}
 
 
 /*/responsividade/*/
@@ -280,7 +284,7 @@ body{
     }
     .background-pink img{
         width: 100vw;
-        height: max-content;
+        max-height: 51.95px;
     }
   .img-paralel{
     justify-content: flex-end;
@@ -317,10 +321,6 @@ body{
         font-size: 17px;
     }
 
-    .background-pink img{
-        width: 100vw;
-        height: max-content;
-    }
     #p-1{
         font-size:6vw;
     }
