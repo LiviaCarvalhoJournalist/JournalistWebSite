@@ -10,7 +10,7 @@
     flex-direction: row;
     width: 50%;
     height: 750px;
-    background-image: url(/Imagens/fundoarea2.jpg);
+    background-image: url(../Imagens/fundoarea2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 
@@ -54,7 +54,6 @@
     justify-content: flex-end;
 }
 .btn-gallery{
-    width: 25%;
     height: auto;
 }
 
@@ -95,6 +94,7 @@
     height: fit-content;
     background-color: #ffe2f8;
     border-top: rgb(236, 83, 139) 1vw solid;
+    padding-bottom: 10%;
 }
 .title-carousel{
     display: flex;
@@ -120,8 +120,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15vw;
-    height: 20vw;
+    width: 22vw;
+    height: auto;
 }
 .card-image{
     width: 100%;
@@ -139,6 +139,21 @@
     transition: 1.6 ease-in-out;
     border: 4px solid rgb(216, 82, 160);
     color: blueviolet;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    background-color: rgb(216, 82, 160);
+    
+}
+.footer a{
+    text-decoration-line: none;
+    color: wheat;
+    cursor: pointer;
+    font-size: small;
+    text-decoration-line: underline;
 }
 /*/responsividade */
 @media(min-width:1401px) and (max-width:1525px){
@@ -282,6 +297,12 @@
     
 }
 @media(min-width:700px) and (max-width:990px){
+    .second-side{
+        height: 50vh;
+    }
+    .first-side{
+        height: 50vh;
+    }
     .container-two{
         flex-direction: row;
     }
@@ -293,10 +314,9 @@
     }
     .text{
         text-indent: 0;
-        width: 90%;
     }
     .text p{
-        font-size: 18px;
+        font-size: 11px;
         text-indent: 1.5rem;
         padding: 10px;
         white-space: none;
@@ -318,16 +338,16 @@
     .img-seta {
         width: 5vw;
         position: relative;
-        left:9vw;
+        left:16vw;
         margin-bottom: -20px;
     }
     .intro{
         font-size: 2vw;
-        margin-left: 3vw;
+        margin-left: 5vw;
     }
     @media(min-width:900px) and (max-width:990px){
         .img-seta{
-            left:13vw;
+            left:17vw;
         }
     }
     .title{
@@ -336,6 +356,20 @@
         color: white;
         text-shadow: 1px 2px 2px black;
         font-size: smaller;
+    }
+}
+@media(min-width:983px) and (max-width:1200px){
+    .text p{
+        font-size: 2vh;
+    }
+    .video-reso{
+        height: 520px;
+    }
+    .first-side, .second-side{
+        height: 600px;
+    }
+    .img-seta{
+        left:8vw;
     }
 }
 /*/responsividade latest works/*/

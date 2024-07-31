@@ -18,7 +18,7 @@
     <header class="site-header">
       <div class="container">
           <div class="row align-items-center">
-              <div class="col-3">
+              <div class="col-3" style="cursor: pointer;" onclick="window.location.href='index.html'">
                   <img class="imgicone" src="../Imagens/imgtst.jpg" alt="icone">
               </div>
               <div class="col-9">
@@ -30,26 +30,27 @@
                             <span class="itemdepht" style="color:rgb(255, 247, 201)"></span>
                           </button>
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item itemdepht" href="#">TV</a>
-                            <a class="dropdown-item itemdepht" href="#">INTERVIEWS</a>
-                            <a class="dropdown-item itemdepht" href="#">COVERAGES</a>
-                            <a class="dropdown-item itemdepht" href="#">WEBSERIES</a>
+                            <a class="dropdown-item itemdepht" href="./src/tv.html">TV</a>
+                            <a class="dropdown-item itemdepht" href="./src/interviews.html">INTERVIEWS</a>
+                            <a class="dropdown-item itemdepht" href="./src/coverages.html">COVERAGES</a>
+                            <a class="dropdown-item itemdepht" href="./src/webseries.html">WEBSERIES</a>
+                            <a class="dropdown-item itemdepht" href="./src/critics.html">CRITICS</a>
                           </div>
                         </div>
                           <li class="nav-item">
-                              <a class="nav-link itemdepht" style="color:rgb(71, 224, 135);"href="#">TV</a>
+                              <a class="nav-link itemdepht" style="color:rgb(71, 224, 135);" href="./src/tv.html">TV</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link itemdepht" href="#">INTERVIEWS</a>
+                              <a class="nav-link itemdepht" href="./src/interviews.html">INTERVIEWS</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link itemdepht" id="button-none-1">COVERAGES</a>
+                              <a class="nav-link itemdepht" id="button-none-1" href="./src/coverages.html">COVERAGES</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link itemdepht" id="button-none-2">CRITIQUES</a>
+                              <a class="nav-link itemdepht" id="button-none-2" href="./src/critics.html">CRITIQUES</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link itemdepht" id="button-none-3">WEBSERIES</a>
+                              <a class="nav-link itemdepht" id="button-none-3" href="./src/webseries.html">WEBSERIES</a>
                           </li>
                       </ul>
                   </nav>
@@ -65,7 +66,7 @@
                     <p id="p-1"><strong>LíVIA CARVALHO</strong></p>
                     <p id="p-2">POP CULTURE JOURNALIST</p>
                     <p>AND FILM CRITIC</p>
-                    <button type="submit" class="btn-contact">
+                    <button type="submit" class="btn-contact" onclick="window.location.href='./src/contact.html'">
                       <img
                         class="img-button"
                         src="../Imagens/rosa-icon.png"
@@ -143,15 +144,15 @@
       </span>
       <div class="card-row">
         <div class="card-container">
-          <p>INTERNATIONAL</p>
+          <p>INTERVIEW WITH DEMON</p>
           <img class="card-image" src="../Imagens/livia.jpg" alt="card image">
         </div>
         <div class="card-container">
-          <p>CINEMA</p>
+          <p>CREATORS OF TIBIA</p>
           <img class="card-image" src="../Imagens/livia.jpg" alt="card image">
         </div>
         <div class="card-container">
-          <p>TEXTS</p>
+          <p>COMIC CON</p>
           <img class="card-image" src="../Imagens/livia.jpg" alt="card image">
         </div>
         <div class="card-container">
@@ -161,6 +162,9 @@
       </div>
       
     </section>
+    <footer class="footer">
+      <p><a target="_blank" href="https://www.linkedin.com/in/eduardo-ramos-da-silva-9a7835245/"><i class=""aria-hidden="true">Created by Eduardo Ramos</i></a></p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
