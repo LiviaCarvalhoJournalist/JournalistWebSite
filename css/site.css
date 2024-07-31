@@ -249,6 +249,8 @@ body{
     .imgicone{
         height: 150%;
         width: 150%;
+        display: block;
+        max-width: 100%;
         position:unset;
     }
     
