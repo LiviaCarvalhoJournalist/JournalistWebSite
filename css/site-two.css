@@ -227,6 +227,7 @@
     color: white;
     text-shadow: 1px 2px 2px black;
 }
+
 @media(min-width:1500px){
     .title{
         margin-left:95px;
@@ -280,6 +281,7 @@
         height: fit-content;
     }
     .video-reso{
+        
         max-height: 462px;
     }
     @media(min-width:384px){
