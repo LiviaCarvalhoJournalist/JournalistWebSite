@@ -122,8 +122,8 @@ body{
     align-items: center;
     justify-content: center;
     max-width: 100%;
+    max-height: 100%;
     border-radius: 40px;
-    min-height: fit-content;
     margin-left: 50px;
     margin-top: 15%;
     animation:backwards 1s forwards;
@@ -251,6 +251,7 @@ body{
         width: 150%;
         display: block;
         max-width: 100%;
+        max-height: 100%;
         position:unset;
     }
     
