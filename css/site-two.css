@@ -10,7 +10,7 @@
     flex-direction: row;
     width: 50%;
     height: 750px;
-    background-image:url('/Imagens/fundoarea2.jpg');
+    background-image:url('./Imagens/fundoarea2.jpg');
     background-repeat: no-repeat;
     background-size:cover;
 
