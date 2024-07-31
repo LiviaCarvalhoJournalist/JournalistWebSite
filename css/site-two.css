@@ -261,8 +261,10 @@
         height: fit-content;
     }
     .video-reso{
-        max-height: 90vw;
-        min-width: fit-content;
+        max-width: 70%;
+        height: 70%;
+        max-height: 70%;
+        object-fit: cover;
     }
     @media(min-width:384px){
     .video-reso{
