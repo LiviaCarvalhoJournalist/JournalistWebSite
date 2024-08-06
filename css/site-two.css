@@ -153,13 +153,12 @@ button, input, select, textarea {
     position: absolute;
     color:white;
     text-shadow: 1px 2px 2px black;
-
 }
 .card-text h1{
     text-align: center;
     font-family: 'SundayMoment';
     text-wrap:wrap;
-    font-size: 7vh;
+    font-size: 7.1vh;
 }
 .card-text p{
     font-family: 'SundayMoment';
@@ -442,6 +441,6 @@ button, input, select, textarea {
         font-size: 2vh;
     }
     .card-text h1{
-        font-size: 3.5vh;
+        font-size: 3.41vh;
     }
 }
