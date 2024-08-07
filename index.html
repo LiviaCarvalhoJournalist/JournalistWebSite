@@ -27,23 +27,24 @@
               </div>
               <div class="col-9">
                   <nav>
-                      
-                      <ul class="nav justify-content-center">
+                      <ul class="nav">
                         <div class="dropdown" id="button-nav">
                           <button class="btn btn-secondary dropdown-toggle" style="background-color:rgb(242, 117, 162); border: 0;" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="itemdepht" style="color:rgb(255, 247, 201)"></span>
                           </button>
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item itemdepht" href="./src/tv.html">TV</a>
+                            <a class="dropdown-item itemdepht" href="./src/interviews.html">INTERVIEWS</a>
                             <a class="dropdown-item itemdepht" href="./src/coverages.html">COVERAGES</a>
                             <a class="dropdown-item itemdepht" href="./src/webseries.html">WEBSERIES</a>
                             <a class="dropdown-item itemdepht" href="./src/critics.html">CRITICS</a>
                           </div>
                         </div>
                           <li class="nav-item">
-                              <a class="nav-link itemdepht" style="color:rgb(71, 224, 135);" href="./src/tv.html">TV</a>
+                              <a class="nav-link itemdepht" style="color:rgb(71, 224, 135);" id="button-none-0" src="./src/tv.html">TV</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link itemdepht" href="./src/interviews.html">INTERVIEWS</a>
+                              <a class="nav-link itemdepht" href="./src/interviews.html" id="button-none-01">INTERVIEWS</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link itemdepht" id="button-none-1" href="./src/coverages.html">COVERAGES</a>
@@ -142,7 +143,7 @@
           </div>
     </main>
     <section class="container-c">
-      <span class="title-carousel">
+      <span class="title-carousel" style="margin-bottom:10%;">
         <h1>LATEST WORKS</h1>
       </span>
       <div class="container-carousel">  
@@ -180,8 +181,14 @@
       </div> 
     </section>
     <footer class="footer">
-      <p><a target="_blank" href="https://www.linkedin.com/in/eduardo-ramos-da-silva-9a7835245/"><i class=""aria-hidden="true">Created by Eduardo Ramos</i></a></p>
-    </footer>
+      <div class="footer-content">
+          <p>
+              <a target="_blank" href="https://www.linkedin.com/in/eduardo-ramos-da-silva-9a7835245/">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>Copyright 2024 - Eduardo Ramos
+              </a>
+          </p>
+      </div>
+  </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
@@ -191,3 +198,21 @@
   </body>
   
 </html>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.card-container');
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('hover-effect');
+              } else {
+                  entry.target.classList.remove('hover-effect');
+              }
+          });
+      });
+  
+      cards.forEach(card => {
+          observer.observe(card);
+      });
+  });
+  </script>

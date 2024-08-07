@@ -1,4 +1,13 @@
-
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    -webkit-appearance: none; 
+    appearance: none;         
+    border: none;            
+    outline: none;            
+    background-color: inherit; 
+}
 main{
     width: 100vw;
 }
@@ -219,13 +228,8 @@ body{
         flex-direction: column-reverse;
        
     }
-    #button-none-1, #button-none-2, #button-none-3{
+    #button-none-0,#button-none-01,#button-none-1,#button-none-2, #button-none-3{
         display: none;
-    }
-    @media(min-width: 499px){
-        #button-none-3{
-            display: block;
-        }
     }
     @media(min-width:500px) and (max-width:600px){
        
@@ -241,11 +245,13 @@ body{
     }
     #button-nav{
         display: flex;
+        padding-right: 10px;
+        
     }
     .imgicone{
         display: block;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 140%;
+        max-height: 140%;
         position:unset;
     }
     
@@ -288,6 +294,10 @@ body{
 }
 @media(min-width:700px){
 
+    nav{
+        display: flex;
+        justify-content: center;
+    }
     #button-none-2, #button-none-3{
         display: none;
     }
