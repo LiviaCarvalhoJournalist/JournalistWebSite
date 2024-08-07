@@ -288,7 +288,7 @@ body{
 }
 @media(min-width:700px){
 
-    #button-none-2, #button-none-3,{
+    #button-none-2, #button-none-3{
         display: none;
     }
     .site-header{
