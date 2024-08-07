@@ -94,7 +94,7 @@ body{
     flex-flow:column;
     font-weight: normal;
     font-family: 'SundayMoment';
-    letter-spacing: 7px;
+    letter-spacing: 3px;
     line-height: 1em;; /* Ajuste este valor conforme necessário */
     text-align: center;
     font-size:10vw;
@@ -228,7 +228,7 @@ body{
         flex-direction: column-reverse;
        
     }
-    #button-none-0,#button-none-01,#button-none-1,#button-none-2, #button-none-3{
+    #button-none-1,#button-none-2, #button-none-3{
         display: none;
     }
     @media(min-width:500px) and (max-width:600px){
@@ -269,7 +269,7 @@ body{
         flex-direction: row-reverse;
     }
     #p-2{
-        margin-top: 35px;
+        margin-top: 10px;
         margin-bottom: 0;
         white-space: nowrap;
         font-size: 10vw;
